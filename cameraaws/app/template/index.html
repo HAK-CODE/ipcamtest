@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+	<input type="text" name="url" id='mytext'/>
+	<button onclick="testcam()">YO</button>
+	<div id='test' style="width: 600px; height: 600px;">
+		<iframe src="" id='iframeTest' style="width: inherit;height: inherit;">		
+		</iframe>
+	</div>
+	<script type="text/javascript">
+		function testcam(){
+			var a = document.getElementById('test');
+			var url = document.getElementById("mytext").value;
+			console.log("Url is "+url);	
+			document.getElementById('iframeTest').src = url;
+		};
+	</script>
+</body>
+</html>
